@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component matches snapshot DOM node stucture 1`] = `
+<DocumentFragment>
+  <section>
+    <h1>
+      Helo
+    </h1>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Nav component matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <h1>
+      Helo
+    </h1>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Nav component matches snapshot DOM node stucture 1`] = `
+<DocumentFragment>
+  <section>
+    <h1>
+      Helo
+    </h1>
+  </section>
+</DocumentFragment>
+`;

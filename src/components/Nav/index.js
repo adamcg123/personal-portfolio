@@ -1,32 +1,51 @@
-import react from "react";
+import React from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
     const categories = [
-        { name: 'resume', description: 'test' }
+        // { name: 'About Me', description: 'Info about me' },
+        { name: 'Resume', description: 'My resume' },
+        { name: 'Portfolio', description: 'My portfolio and projects' },
+
     ];
 
-    const handleClick = () => {
-        console.log("click handled")
-    }
+    const handleClick = (item) => {
+        console.log(item);
+        return item;
+    };
 
     return (
-        <header>
+        <header className="flex-row px-1">
             <h2>
-                <a href="/">
-                    <span>Adam G</span>
+                <a data-testid="link" href="/">
+                    Adam G
                 </a>
             </h2>
             <nav>
-                <ul className="">
-                    <li className="">
-                        <a href="#about" onClick={() => handleClick()}>
-                            resume
+                <ul className="flex-row">
+                    <li className="mx-2">
+                        <a href="#about" onClick={() => handleClick('About Me')}>
+                            About me
                         </a>
                     </li>
+                    <li className={"mx-2"}>
+                        <span onClick={() => handleClick()}>
+                            Contact
+                        </span>
+                    </li>
+                    {
+                        categories.map((category) => (
+                            <li className="mx-1" key={category.name} >
+                                <span onClick={() => { handleClick(category.name); }}>
+                                    {capitalizeFirstLetter(category.name)}
+                                </span>
+                            </li>
+                        ))
+                    }
                 </ul>
             </nav>
         </header>
-    )
+    );
 }
 
-export default Nav
+export default Nav;
