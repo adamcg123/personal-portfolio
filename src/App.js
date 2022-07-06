@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import About from "./components/about/about";
 import Nav from "./components/Nav/Nav";
-import Projects from "./components/projects/projects";
+import Portfolio from "./components/portfolio/portfolio";
 import Contact from "./components/contact/contact";
 
 
@@ -24,7 +24,7 @@ function App() {
 
       <main>
         <About />
-        <Projects />
+        <Portfolio />
         <Contact />
       </main>
 

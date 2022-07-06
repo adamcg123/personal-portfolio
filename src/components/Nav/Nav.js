@@ -19,14 +19,15 @@ function Nav() {
               About me
             </a>
           </li>
-          <li >
-            <a href="#contact">
-              <span >contact</span>
+          <li className="mx-2">
+            <a data-testid="contact" href="#contact">
+              Contact
             </a>
           </li>
-          <li>
-            <a href="#projects">
-              <span>Projects</span></a>
+          <li className="mx-2">
+            <a data-testid="projects" href="#projects">
+              Projects
+            </a>
           </li>
 
         </ul>
