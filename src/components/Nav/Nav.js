@@ -5,14 +5,14 @@ import React from "react";
 function Nav() {
 
   return (
-    <header className="flex-row px-1">
+    <header className=" flex-row">
       <h2>
         <a data-testid="link" href="/">
           Adam G
         </a>
       </h2>
       <nav>
-        <ul className="flex-row">
+        <ul className="Nav flex-row">
           <li className="mx-2">
             <a data-testid="about" href="#about">
               About me
