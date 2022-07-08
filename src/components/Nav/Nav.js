@@ -4,7 +4,6 @@ import React from "react";
 
 function Nav() {
 
-
   return (
     <header className="flex-row px-1">
       <h2>
@@ -29,7 +28,6 @@ function Nav() {
               Projects
             </a>
           </li>
-
         </ul>
       </nav>
     </header>

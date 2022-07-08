@@ -310,3 +310,7 @@ a {
 #projects {
   text-align: center;
 }
+
+.btn {
+  margin: .4rem;
+}
