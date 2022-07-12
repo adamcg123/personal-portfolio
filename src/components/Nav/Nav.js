@@ -1,5 +1,5 @@
 import React from "react";
-
+import Contact from "../contact/contact.js";
 
 
 function Nav() {
@@ -7,24 +7,24 @@ function Nav() {
   return (
     <header className=" flex-row">
       <h2>
-        <a data-testid="link" href="/">
+        <a href="/">
           Adam G
         </a>
       </h2>
       <nav>
         <ul className="Nav flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about">
+            <a href="#about">
               About me
             </a>
           </li>
           <li className="mx-2">
-            <a data-testid="contact" href="#contact">
+            <a href="#contact">
               Contact
             </a>
           </li>
           <li className="mx-2">
-            <a data-testid="projects" href="#projects">
+            <a href="#projects">
               Projects
             </a>
           </li>
