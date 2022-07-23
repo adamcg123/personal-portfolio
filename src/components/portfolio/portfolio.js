@@ -5,8 +5,6 @@ import project3 from "../../images/project3.jpg"
 import project4 from "../../images/project4.jpg"
 import project5 from "../../images/project5.jpg"
 
-// import IMAGES from "../../images/index1.js"
-
 const projects = [
   {
     name: "Team Profile Generator",
@@ -54,7 +52,7 @@ function Portfolio() {
       {projects.map((project, i) => (
         <div class="card" >
           <div>
-            <img src={project.image} alt="" />
+            <img src={project.image} alt={project.image} />
           </div>
           <div class="card-body">
             <h5 class="card-title">{project.name}</h5>
