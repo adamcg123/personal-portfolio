@@ -229,7 +229,7 @@ a {
   
 } 
 
-@media screen and (max-width:1200px) and (min-width:480px) {
+@media screen and (max-width:1200px) and (min-width:350px) {
     .card {
       display: block;
       width: auto;
